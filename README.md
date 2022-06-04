@@ -1,5 +1,7 @@
 # LZ_HUD
 
+ESX ONLY
+
 Thanks to ItsTobi for de CarHud UI.
 
 ES: Este HUD incluye, HUD de status, CarHud y información personal del PJ, se puede configurar algunas cosas en el cfg.lua.
