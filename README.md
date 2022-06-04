@@ -4,9 +4,9 @@ ESX ONLY
 
 Thanks to ItsTobi for de CarHud UI.
 
-ES: Este HUD incluye, HUD de status, CarHud y información personal del PJ, se puede configurar algunas cosas en el cfg.lua.
+ES: Este HUD incluye, HUD de status, CarHud y información personal del PJ, se puede configurar algunas cosas en el cfg.lua, cuando tienes menos de 70% de cualquier bloque este aparecerá, en cambio, cuando tienes más de 70% de cualquier bloque desaparece, asi se ocupa menos pantalla.
 
-EN:  This HUD includes, status HUD, CarHud and personal information of the PJ, you can configure some things in the cfg.lua.
+EN:  This HUD includes, status HUD, CarHud and personal information of the PJ, you can configure some things in the cfg.lua, when you have less than 70% of any block this will appear, on the other hand, when you have more than 70% of any block disappears, so it occupies less screen.
 
 PREVIEWS:
 
