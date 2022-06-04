@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+* {
+    user-select: none;
+}
+
+i {
+    color: white;
+}
+
+.container-status {
+    position: absolute;
+    bottom: 3.5vw;
+    left: .5vw;
+    transition: .7s;
+}
+
+#exit-pjinfo {
+    position: absolute;
+    right: .5vw;
+    top: .5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.vida {
+    transition: .5s;
+    position: absolute;
+    bottom: 6vw;
+    height: 2.2vw;
+    width: 2.2vw;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2);
+}
+
+#heart-icon {
+    font-size: 1.05vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+}
+
+.progressbar-vida {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+    background-color: #000;
+    max-height: 2.2vw;
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw #000;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.escudo {
+    position: absolute;
+    transition: .5s;
+    bottom: 3.3vw;
+    height: 2.2vw;
+    width: 2.2vw;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2);
+}
+
+#escudo-icon {
+    font-size: 1.05vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+}
+
+.progressbar-escudo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+    background-color: #000;
+    max-height: 2.2vw;
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw #000;
+    z-index: -1;
+}
+
+.hunger {
+    position: absolute;
+    bottom: .6vw;
+    transition: .5s;
+    height: 2.2vw;
+    width: 2.2vw;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2);
+}
+
+#hunger-icon {
+    font-size: 1.05vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%; 
+    transform: translate(-50%, 50%);
+    z-index: 100;
+}
+
+.progressbar-hunger {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+    background-color: #000;
+    max-height: 2.2vw;
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw #000;
+    z-index: -1;
+}
+
+.thirst {
+    position: absolute;
+    bottom: -2.1vw;
+    height: 2.2vw;
+    transition: .5s;
+    width: 2.2vw;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2), 0 0 .25vw rgba(0, 0, 0, .2);
+}
+
+#thirst-icon {
+    font-size: 1.05vw;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 100;
+}
+
+.progressbar-thirst {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+    background-color: #000;
+    max-height: 2.2vw;
+    border-radius: .2vw;
+    box-shadow: 0 0 .25vw #000;
+    z-index: -1;
+}
+
+.logo {
+    position: absolute;
+    top: .5vw;
+    right: 1vw;
+    width: 7vw;
+}
+
+/* personal info */
+
+.personal-info-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 30vw;
+    border-radius: .2vw;
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 .35vw rgba(0, 0, 0, 1), 0 0 .35vw rgba(0, 0, 0, 1), 0 0 .35vw rgba(0, 0, 0, 1);
+}
+
+.user-logo {
+    position: absolute;
+    top: .5vw;
+    left: .5vw;
+    width: 5vw;
+    border-radius: 1vw;
+}
+
+.bienvenida {
+    position: absolute;
+    top: .5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Bebas Neue';
+}
+
+.id-player {
+    position: absolute;
+    color: white;
+    font-size: 1.2vw;
+    left: .5vw;
+    bottom: .2vw;
+    font-family: 'Bebas Neue';
+}
+
+#wallet-icon {
+    position: absolute;
+    font-size: 1.4vw;
+    left: 4vw;
+    top: 8vw;
+}
+
+.efectivo-amount {
+    position: absolute;
+    left: 5.7vw;
+    top: 7.8vw;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+}
+
+#banco-icon {
+    position: absolute;
+    font-size: 1.4vw;
+    left: 4vw;
+    top: 15vw;
+}
+
+.banco-amount {
+    position: absolute;
+    left: 5.7vw;
+    top: 14.9vw;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+}
+
+#black_money-icon {
+    position: absolute;
+    font-size: 1.4vw;
+    left: 4vw;
+    top: 22vw;
+}
+
+.black_money-amount {
+    position: absolute;
+    left: 5.7vw;
+    top: 21.9vw;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+}
+
+.jobandgrade {
+    position: absolute;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+    right: 7vw;
+    top: 7.8vw;
+}
+
+#identifier-job {
+    position: absolute;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+    right: 10vw;
+    top: 7.7vw;
+}
+
+.salario {
+    position: absolute;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+    right: 7vw;
+    top: 22vw;
+}
+
+.grade {
+    position: absolute;
+    color: white;
+    font-size: 1.4vw;
+    font-family: 'Bebas Neue';
+    right: 7vw;
+    top: 15vw;
+}
+
+.aceptar {
+    position: absolute;
+    padding: .3vw;
+    border-radius: .2vw;
+    font-family: 'Bebas Neue';
+    font-size: 1.4vw;
+    cursor: pointer;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+    background: white;
+    color: black;
+}
+
+.aceptar:hover {
+    filter: brightness(35%);
+}
+
+/* end personal info */
+
+/* Car */
+
+.velocidad {
+    position: fixed;
+    font-size: 2vw;
+    font-family: 'Calibri';
+    color: white;
+    text-align: center;
+    right: 11vw;
+    bottom: 3.9vw;
+}
+
+.progress-fuel{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 1vw;
+    width: 6vw;
+    height: .4vw;
+    bottom: 3.1vw;
+    right: 8vw;
+    box-shadow: 0 0 .5vw rgba(0, 0, 0, .4), 0 0 .5vw rgba(0, 0, 0, .4), 0 0 .5vw rgba(0, 0, 0, .4), 0 0 .5vw rgba(0, 0, 0, .4);
+}
+
+.fuel-p {
+    height: 100%;
+    max-width: 6vw;
+    transition: .5s;
+    background-color: #000;
+    border-radius: 1vw;
+}
+
+.marchas {
+    position: absolute;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Calibri';
+    text-align: center;
+    border-radius: 0.2vw;
+    background-color: black;
+    border: 0.1vw solid white;
+    width: 1.7vw;
+    height: 1.7vw;
+    right: 8.5vw;
+    bottom: 4.1vw;
+}
+
+.marcha-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    bottom: 50%;
+}
+
+.icon-fuel {
+    position: absolute;
+    color: white;
+    bottom: 2.85vw;
+    left: 84.5vw;
+    font-size: .9vw;
+}
+
+/* end car */
